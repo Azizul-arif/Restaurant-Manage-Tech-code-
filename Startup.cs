@@ -27,10 +27,12 @@ namespace RestManage
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddControllersWithViews();
-
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["FirstConnection"]));
-            services.AddMvc();
+            services.AddControllersWithViews();
+            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FirstConnection")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FirstConnection")));
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["FirstConnection"]));
+            //services.AddMvc();
 
         }
 

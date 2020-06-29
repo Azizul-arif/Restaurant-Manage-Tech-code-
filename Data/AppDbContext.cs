@@ -1,10 +1,15 @@
-﻿using RestManage.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using RestManage.Models;
 using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
 namespace RestManage.Data
 {
     public class AppDbContext: DbContext
     {
-        public Microsoft.EntityFrameworkCore.DbSet<Employee> Employees { get; set; }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+        public DbSet<Employee> Employees { get; set; }
     }
 }

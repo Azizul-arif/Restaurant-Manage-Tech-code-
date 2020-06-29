@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\C#\\27-6-20\\RestManage\\RestManage.csproj": {}
+    "G:\\C#\\27-6-20\\RestManage29-6-20\\RestManage.csproj": {}
   },
   "projects": {
-    "G:\\C#\\27-6-20\\RestManage\\RestManage.csproj": {
+    "G:\\C#\\27-6-20\\RestManage29-6-20\\RestManage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\C#\\27-6-20\\RestManage\\RestManage.csproj",
+        "projectUniqueName": "G:\\C#\\27-6-20\\RestManage29-6-20\\RestManage.csproj",
         "projectName": "RestManage",
-        "projectPath": "G:\\C#\\27-6-20\\RestManage\\RestManage.csproj",
+        "projectPath": "G:\\C#\\27-6-20\\RestManage29-6-20\\RestManage.csproj",
         "packagesPath": "C:\\Users\\Arif\\.nuget\\packages\\",
-        "outputPath": "G:\\C#\\27-6-20\\RestManage\\obj\\",
+        "outputPath": "G:\\C#\\27-6-20\\RestManage29-6-20\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,6 +45,10 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -56,6 +60,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             }
           },
           "imports": [
